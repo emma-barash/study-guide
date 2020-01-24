@@ -12,4 +12,5 @@ export const SecondaryHeader = styled(Header)`
 export const VocabHeader = styled(Header)`
     text-align: center;
     font-size: 20px;
+    cursor: pointer;
 `;

@@ -22,7 +22,21 @@ const BIOL = () => {
                     :
                     <>
                         <VocabContainer onClick={ toggler }>
-                            <VocabHeader>Here is the Vocabulary!</VocabHeader>
+                            <VocabHeader>Hide Vocabulary</VocabHeader>
+                        </VocabContainer>
+                    </>
+            } />
+                <Toggle render ={({ on, toggler }) => 
+                    !on ?
+                    <>
+                        <VocabContainer onClick={ toggler }>
+                            <VocabHeader>Show Course Notes</VocabHeader> 
+                        </VocabContainer>
+                    </>
+                    :
+                    <>
+                        <VocabContainer onClick={ toggler }>
+                            <VocabHeader>Hide Course Notes</VocabHeader>
                         </VocabContainer>
                     </>
             } />
