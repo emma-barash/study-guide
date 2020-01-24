@@ -1,29 +1,36 @@
-import React, { Component } from 'react'
-import { Header, SubjectContainer, SecondaryHeader, RevealB } from '../styles/index.js';
+import React from 'react';
+import Toggle from '../shared/Toggle.js';
+import { 
+    Header, 
+    SubjectContainer, 
+    SecondaryHeader, 
+    VocabContainer,
+    VocabHeader 
+} from '../styles/index.js';
 
-class BIOL extends Component {
-    constructor(){
-        super();
-        this.state = {
-            button: false
-        }
-    }
-
-    revealVocab = e => {
-        e.preventDefault();
-        return this.setState({ button: true });
-    }
-    
-    render() {
+const BIOL = () => {
         return (
             <SubjectContainer>
                 <Header>Biology 15B</Header> 
                 <SecondaryHeader>Cells and Organisms</SecondaryHeader> 
-                <RevealB onClick={this.revealVocab}>show vocabulary</RevealB>
+                <Toggle render ={({ on, toggler }) => 
+                    !on ?
+                    <>
+                        <VocabContainer onClick={ toggler }>
+                            <VocabHeader>Show Vocabulary</VocabHeader> 
+                        </VocabContainer>
+                    </>
+                    :
+                    <>
+                        <VocabContainer onClick={ toggler }>
+                            <VocabHeader>Here is the Vocabulary!</VocabHeader>
+                        </VocabContainer>
+                    </>
+            } />
             </SubjectContainer>
         )
     }
-}
+
 
 export default BIOL;
 

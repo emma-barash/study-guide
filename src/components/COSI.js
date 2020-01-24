@@ -1,20 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Header, SubjectContainer } from '../styles/index.js';
 
-class COSI extends Component {
-    constructor(){
-        super();
-        this.state = {
-            button: false
-        }
-    } // create a toggle render prop?
-    render(){ 
+const COSI = () => {
         return (
         <SubjectContainer>
             <Header>Computer Science 12B</Header>
         </SubjectContainer>
         );
     };
-};
 
 export default COSI;

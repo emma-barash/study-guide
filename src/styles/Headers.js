@@ -8,3 +8,8 @@ export const SecondaryHeader = styled(Header)`
     font-size: 20px;
     display: inline;
 `;
+
+export const VocabHeader = styled(Header)`
+    text-align: center;
+    font-size: 20px;
+`;
