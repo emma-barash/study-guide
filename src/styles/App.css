@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    background-color: rgb(49, 44, 44);
+    color: rgb(222, 220, 235);
+}
+
+li{
+    font-size: 20px;
+}
+
+.link{
+    margin: 50px;
+    text-decoration: none;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
