@@ -5,8 +5,7 @@ import {
     SubjectContainer, 
     SecondaryHeader, 
     VocabContainer,
-    VocabHeader 
-} from '../styles/index.js';
+    VocabHeader } from '../styles/index.js';
 
 const BIOL = () => {
         return (
